@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Skill_Swap.png" type="image/x-icon">
+    <link rel="stylesheet" href="card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d11d15e86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+
+    <title>Skill Swap</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="left-nav">
+            <img src="images/Skill_Swap.png" alt="Logo">
+            <ul class="profile-nav-titles">
+                <li><a class="nav__link" href="/message">Messages</a></li>
+                <li><a class="nav__link" href="/requests">Request Recieved</a></li>
+                <li><a class="nav__link" href="#">Request Send</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <form action="">
+                <input type="search" name="SearchTalent" id="SearchTalent" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="profile-image-container">
+                <img src="images/beautiful.png" alt="Profile's Image" class="profile-image">
+            </div>
+        </div>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/Frame 7.png" alt="My Image">
+                    <h2>Dhruvi Bansal</h2>
+                </div>
+                <hr>
+                <a href="./myprofile" class="sub-menu-link">
+                    <i class="fa-solid fa-user"></i>
+                    <p>My profile</p>
+                    <span>></span>
+                </a>
+                <a href="./logout" class="sub-menu-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <form action="get" class="searching">
+        <input type="text" name="SkillLearn" id="SkillLearn" placeholder="Skill want to learn">
+        <i class="fa-solid fa-right-left"></i>
+        <input type="text" name="SkillTeach" id="SkillTeach" placeholder="Skill want to teach">
+        <button type="submit"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <hr>
+    </form>
+    <div class="card-container">
+        <div class="card card--1">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="images/Frame 7.png" alt="">
+                    <h2>Dhruv Bansal</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Dhruv <span>Bansal</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--2">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="images/user.png" alt="">
+                    <h2>Yashika Gupta</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Yashika <span>Gupta</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--3">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="">
+                    <h2>Shubham Tiwari</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button> 
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Shuvham <span>TIwari</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--4">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                    <h2>Zardam Hussain</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Zardam <span>Hussain</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--5">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Dhruv Bansal</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Dhruv <span>Bansal</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--6">
+            <div class="card-inner">
+                <div class="front">
+                    <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Dhruv Bansal</h2>
+                    <p>Web Developer, India</p>
+                    <button> hover me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Dhruv <span>Bansal</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="card card--5">
+            <div class="card-inner">
+                <div class="front">
+                    <h2>Dhruv Bansal</h2>
+                    <p>Web Developer, India</p>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        </div>
+                    <button> choose me</button>
+                </div>
+                <div class="back">
+                    <form action="/api/post" method="post">
+                    <img src="images/waving-hand.png" alt="Waving Hand">
+                    <h1>Dhruv <span>Bansal</span></h1>
+                    <p>I'm Web Developer currenty working @microsoft to make website.</p>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skill Want to learn :</h5>
+                            <p>C++</p>
+                        </div>
+                        <div class="col">
+                            <h5>Skill Want to Teach :</h5>
+                            <p>Html</p>
+                        </div>
+                        <div class="col">
+                            <h5>Rating: </h5>
+                            <span>5</span><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col">
+                            <button type="submit">Request</button>
+                        </div>
+                        
+                    </div>
+                    </form>
+                </div>
+            </div>  
+            
+        </div>
+    </div>
+</body>
+<script>
+    const profimg = document.querySelector(".profile-image");
+    const subMenu = document.querySelector(".sub-menu-wrap");
+    profimg.addEventListener('click',()=>{
+        subMenu.classList.toggle("open-menu");
+    })
+const nav = document.querySelector(".nav")
+    const handlehover = function (e, opacity) {
+
+  if (e.target.classList.contains("nav__link")) {
+    const link = e.target;
+    const siblings = e.target.closest(".left-nav").querySelectorAll(".nav__link");
+    const logo = e.target.closest(".left-nav").querySelector("img");
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = opacity;
+      logo.style.opacity = opacity;
+    });
+  }
+};
+
+
+nav.addEventListener("mouseover", (e) => handlehover(e, 0.5));
+
+nav.addEventListener("mouseout", (e) => handlehover(e, 1));
+
+// document.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     if(!e.target.classList.contains("profile-image")){
+//         subMenu.classList.remove("open-menu");
+//     }
+// })
+
+</script>
+</html>

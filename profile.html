@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@300;400&family=Monoton&family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+        
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/2d11d15e86.js" crossorigin="anonymous"></script>
+        
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+       
+        #search {
+            margin: 0 auto;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+        }
+        
+
+        #learnMore:hover{
+            background-color: green;
+            color: white;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+        }
+
+        #signup {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+            color: white;
+            background-color: green;
+        }
+
+        #signup:hover {
+            background-color: darkgreen;
+        }
+
+        #login:hover {
+            filter: drop-shadow(0px 0px 12px black);
+        }
+
+        #photo {
+            width: 100px;
+            height: 100px;
+            background-image: url('./images/beautiful.png');
+            background-repeat: no-repeat;
+            background-size: 105px;
+            border-radius: 50%;
+        }
+
+        .border{
+            border-color: black;
+        }
+
+
+        ._foot{
+            margin: 0;
+            /* padding: 0; */
+            padding-top:20px ;
+            text-transform: capitalize ;
+        }
+
+        ._footer{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            height: 598px;
+            bottom: 16px;
+
+            background: #001E00;
+            border-radius: 8px;
+        }
+        ._footer_wrapper{
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+        }
+
+        ._swappers , ._talents ,._resource, .company {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: white;
+            font-family: 'Inter';
+            letter-spacing: 0.32px;
+        }
+
+        ._us , ._last{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ._follow h4 , ._app h4{
+            display: inline-flex;
+            padding-right: 3rem ;
+        }
+
+        ._follow , ._app ,._last{
+            display: flex;
+            color: white;
+        }
+        ._follow ._icons i , ._app ._icons i{
+            box-sizing: border-box;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #BECCBE;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ._last{
+            margin-top: 15px;
+            border-top: 1px solid white;
+        }
+        ._icons{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+        }
+       ._icons i::before{
+        position: relative;
+        top: -8px;
+       }
+
+       a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+       }
+       .profilephoto{
+        height: 60px;
+        width: 60px;
+       }
+       .profilephoto img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+       }
+
+    </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="mx-3" src="./images/skillswap7190-fvrxi.svg">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item mx-4">
+                            <div class="btn-group">
+                                <div type="button" class="dropdown-toggle my-2"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Find Talent
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item"
+                                            type="button">blah</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah2</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah3</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn mx-5" type="submit">Become
+                                Swapper</button>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search for any services"
+                        aria-label="Search"
+                        id="search">
+                        <a href="card.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-magnifying-glass" style="margin-top: 10px;"></i></a>
+
+                </form>
+                <div class="d-flex">
+                    <div class="profilephoto">
+                        <img src="/images/beautiful.png" alt="">
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container border">
+        <div class="container d-flex">
+            <div class="container my-4" id="photo">q</div>
+
+            <div class="container my-4 mx-4">
+                <h3>Dhruvi Bansal</h3>
+                <div class="">
+                    <i class=""></i>
+                    <span>New Delhi</span>
+                    <span>India</span>
+                </div>
+                <div class="my-3 d-flex">
+                    <div class="">
+                    <span class="form-label" id="value">20</span>
+                    
+                    <div class="range" style="width: 100px;">
+                        <input type="range" class="form-range" id="customRange1" />
+                    </div>
+                    <span>Swapping Succes</span>
+                    </div>
+                    
+                    <div class="mx-4 my-3">
+                        <p>🔥TOP RATED PLUS</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        
+        <div class="container d-flex border">
+            <div style="width:30%;" >
+            <div class="container" style="border-right:1px solid rgba(0, 0, 0, 0.3)">
+                <div>
+                <div class="container" style="margin-top: 20%;">View Profile</div>
+                <div class="btn btn-outline-success" style="width: 100%; text-align:left; margin-top:10%; margin-bottom:40px">All Work</div>
+                </div>
+            </div>
+
+            <div class="container" style="border-right:1px solid rgba(0, 0, 0, 0.3)">
+                <div>
+                <div class="container" style="margin-top: 20%;"><h2>Want to swap skills with
+                    Dhruv Bansal? </h2></div>
+                <div class="btn btn-outline-success" style="width: 100%; margin-top:10%; margin-bottom:40px">Sign Up</div>
+                </div>
+            </div>
+            <div class="container" style="border-right:1px solid rgba(0, 0, 0, 0.3)">
+                <div class="d-flex">
+                    <div class="container">
+                        <div><h2>2232</h2></div>
+                        <div>Total Swaps</div>
+                    </div>
+                    <div class="container">
+                        <div><h2>2232</h2></div>
+                        <div>Total Hours</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="border-right:1px solid rgba(0, 0, 0, 0.3); margin-top:10%;">
+            
+                    <div class="container" style="margin-top:70px;">
+                        <h5>hours per week</h5>
+                    </div>
+                    
+                    <div class="container">
+                        As Needed - Open to Offers
+                    </div>
+                    
+                    <div class="container">
+                        < 24 hrs response time ❓️
+                    </div>
+                    
+                    <div class="container" style="margin-top:70px;">
+                        <h5>Associated with</h5>
+                        <div class="container d-flex">
+                            <div class="container" style="font-size:12px; width:20%; padding-top: 2%;">MaxoBiz</div>
+                            <div class="container">
+                            <div class="container" style="color:green; font-size:20px">MaxoBiz</div>
+                            <div class="container">1,813 hours</div>
+                            <div class="container my-2"><b>75%</b> Swapping Success</div>
+                            <div class="progress mx-2 my-2" style="width: 100px; height: 10px">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <div class="container" style="color: rgb(19, 19, 133)">✅ TOP RATED PLUS</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                        
+                
+            </div>
+            </div>
+            
+            <div class="" style="width:70%">
+                <div class="container">
+                    <div>
+                        <div class="container" style="margin-top: 5%;"><h5>Creative Artist | Logo & Branding Expert |
+                            Packaging & Label Designer</h5></div>
+                            <div class="container" style="width: 100%; margin-top:7%;">I'm a branding enthusiast and love building brands. Either you want to develop a brand from
+                                scratch or need to improve on your existing designs and branding styles. I am the creative mind
+                                you want to trust when revamping your existing identity or creating a new one from scratch.</div>
+                            </div>
+                            <div class="container" style="margin-top: 3%">
+                                My Specialized Services include the _following:
+                                <div class="container">✅ Logo Design</div>
+                                <div class="container">✅ Business Card</div>
+                        <div class="container">✅ Brochures Design</div>
+                        <div class="container">✅ Stationery Design</div>
+                        <div class="container">✅ Packaging & Label Design</div>
+                        <div class="container">✅ Promotional Materials Design</div>
+                        <div class="container">✅ Corporate Identity Kit Design</div>
+                        <div class="container">✅ Class 12 English</div>
+                        <div class="container">✅ Class 12 Maths</div>
+                    </div>
+                    <div class="container" style="margin-top: 5%;margin-bottom: 5%;">You can contact me 24/7, 7 days a week!</div>
+                </div>
+                <div class="container" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Swap History</h5></div>
+                    <div class="container d-flex" style="width: 100%; margin-top:2%; background-image:linear-gradient(to right, white 10%, 30%, grey 90%);
+                    ">
+                    <div class="container" style="font-size: 20px;">Completed Swapping(303)</div>
+                    <div class="container" style="font-size: 20px;">In Progress(13)</div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                    <div class="container d-flex" style="padding-top: 40px;">
+                        <div >⭐️⭐️⭐️⭐️⭐️5.0</div>
+                        <div class="mx-4">Jun 2, 2023-Jun 5, 2023</div>
+                    </div>
+                    <div class="container my-4" style="font-size:20px">"Friendly, fast and most important talented. I have hired them more than ten times and will
+                        continue to do so."</div>
+                    <div class="container"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+    
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                        <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                        <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                        <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                    </div>
+                    </div>
+                    
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                    <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                    <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                    <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo Design for Psychotherapist</h5></div>
+                    <div class="container d-flex" style="padding-top: 40px;">
+                        <div >⭐️⭐️⭐️⭐️⭐️5.0</div>
+                        <div class="mx-4">Jun 2, 2023-Jun 5, 2023</div>
+                    </div>
+                    <div class="container my-4" style="font-size:20px">"It was a great experience working with Mian and Maxobiz! He did a fantastic job of my logo. He
+                        was very patient with me through many revisions and demonstrated a high level of attention to
+                        detail. The turn around time was very fast. Thank you again!"</div>
+                    <div class="container"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                    <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                    <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                    <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Buisness Card Design</h5></div>
+                    <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                    <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                    <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                    <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                    <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                    <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                 
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo. box and bottle design</h5></div>
+                    <div class="container d-flex" style="padding-top: 40px;">
+                        <div >⭐️⭐️⭐️⭐️⭐️5.0</div>
+                        <div class="mx-4">Jun 2, 2023-Jun 5, 2023</div>
+                    </div>
+                    <div class="container my-4" style="font-size:20px">"Friendly, fast and most important talented. I have hired them more than ten times and will
+                        continue to do so."</div>
+                    <div class="container"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container" style="margin-top: 5%;"><h2>Logo designer    </h5></div>
+                    <div class="container my-5" style="color:gray"><h4>Jun 1, 2023 - Jun 5, 2023</h4></div>
+                    <div class="container" style="color:gray"><h4>No feedback given</h4></div>
+                    <div class="container my-5" style="color:gray"><h4>Private earnings</h4></div>
+                </div>
+                </div>
+                
+                <div class="container my-5" style="border-top: 1px solid black;">
+                    <div>
+                    <div class="container d-flex my-4">
+                        <div style="font-size: 20px;">Dhruvi Bansal.</div>
+                        <div class="mx-2" style="color:green; font-size: 20px">Create an account to review them</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container my-5 d-flex" style="border-top: 1px solid black;">
+                
+                <div class="container my-5">
+                    <img src="./images/png1.png" alt="png1">
+                    <h6 style="max-width: 250px;">Alison Lotterstein - Logo &
+                        Branding</h6>
+                </div>
+                
+                <div class="container my-5">
+                    <img src="./images/png2.png" alt="png1">
+                    <h6 style="max-width: 250px;">MonarX - Corporate
+                        Branding</h6>
+                </div>
+                
+                <div class="container my-5">
+                    <div class="container my-3">Want to see more ? </div>
+                    <div class="container btn btn-outline-success" style="border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;">Create Account</div>
+                </div>
+
+            </div>
+            
+            <div class="container my-5" style="border-top: 1px solid black;">
+                <div class="container my-3" style="font-size: 20px;">Skills</div>
+                <div class="container d-flex gap-4" style="justify-content: space-around; flex-wrap: wrap;">
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Cards & Flyers</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Corporate Brand Identity</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Motion Graphics</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Brand Guidelines</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Social Media Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">WordPress Website</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Vehicle & Motorcycle Wrap Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Print Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Logo Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Graphic Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Flyer Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Packaging Design</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Logo Animation</div>
+                    <div class="" style="background-color: lightgreen; padding: 1% 2% 1% 2%; 
+                    border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px ">Custom Web Design</div>
+                    
+                </div>
+                </div>
+            </div> 
+
+            
+        </div>
+        
+        <div class="container" style="border: 1px solid  rgba(0, 0, 0, 0.2);">
+            <div class="container" style="margin-top: 3%;">
+                <h3>Testimonials</h3>
+                <p>Endorsements from past clients</p>
+                <div id="review"></div>
+            </div>
+        </div>
+
+        <div class="container my-2" style="border: 1px solid  rgba(0, 0, 0, 0.2);">
+            <div class="container" style="margin-top: 3%;">
+                <div class="container"> <h5>Search for other talent</h5> </div>
+                <div class="container d-flex">
+                    <div class="container" style="width: 150px">
+                <input class="form-control" type="search"
+                        placeholder="Search for any services"
+                        aria-label="Search"
+                        id="search" style="width: 150px; margin-left:0">
+                    </div>
+                    <div class="container my-2">
+                        🔍️
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 0px; margin-top: 3%">
+        <div class="_footer _foot">
+            <div class="_footer_wrapper _foot">
+                <div class="_swappers _foot">
+                    <a href="" class="_foot"><h4 class="_foot">For Swappers</h4></a>
+                    <a href="" class="_foot">How To Find Talent</a>
+                    <a href="" class="_foot">Skill Hub</a>
+                </div>
+                <div class="_talents _foot">
+                    <a href="" class="_foot"><h4 class="_foot">For Talent</h4></a>
+                    <a href="" class="_foot">How To Find Mentor</a>
+                    <a href="" class="_foot">Success Stories</a>
+                </div>
+                <div class="_resource _foot">
+                    <a href="" class="_foot"><h4>Resources</h4></a>
+                    <a href="" class="_foot">Help & Support</a>
+                    <a href="" class="_foot">Skill_swap Review</a>
+                    <a href="" class="_foot">Resources</a>
+                    <a href="" class="_foot">Blog</a>
+                    <a href="" class="_foot">Community</a>
+                </div>
+                <div class="company _foot">
+                    <a href="" class="_foot"><h4>Company</h4></a>
+                    <a href="" class="_foot">About us</a>
+                    <a href="" class="_foot">Leadership</a>
+                    <a href="" class="_foot">Careers</a>
+                    <a href="" class="_foot">Our Impact</a>
+                    <a href="" class="_foot">Press</a>
+                    <a href="" class="_foot">Contact us</a>
+                    <a href="" class="_foot">Trust, Safety & Security</a>
+                </div>
+            </div>
+    
+            <div class="_us _foot">
+                <div class="_follow _foot">
+                    <h4 class="_foot">Follow us</h4>
+                    <div class="_icons _foot">
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-facebook"></i></a>
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-linkedin"></i></a>
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-twitter"></i></a>
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-youtube"></i></a>
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="_app _foot">
+                    <h4 class="_foot">moblie app</h4>
+                    <div class="_icons _foot">
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-apple"></i></a>
+                        <a href="" class="_foot"><i class="_foot fa-brands fa-android"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="_last _foot">
+                <a href="" class="_foot">©2023-2023 skill_swap</a>
+                <a href="" class="_foot">term of serivce</a>
+                <a href="" class="_foot">privacy policy</a>
+            </div>
+        </div>
+
+        </div>
+        <script>
+            const range = document.getElementById("customRange1");
+            const label = document.getElementById("value");
+            label.innerHTML = range.value + " %";
+            range.onchange = () => { 
+                label.innerHTML = range.value + " %";
+            } 
+        </script>
+    </body>
+
+</html>
+
+

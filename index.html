@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SkillSwap</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #search, #learnHowToSwap {
+            margin: 0 auto;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+        }
+
+        #learnMore{
+            background-color: white;
+            color: green;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+        }
+
+        #learnMore:hover{
+            background-color: green;
+            color: white;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+        }
+
+        #signup, #getStarted, #signUpForFree {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 100px 100px 100px 100px / 100px 100px 100px 100px;
+            color: white;
+            background-color: green;
+        }
+
+        #signup:hover, #getStarted:hover, #signUpForFree:hover, #learnHowToSwap:hover {
+            background-color: darkgreen;
+        }
+
+        #login:hover {
+            filter: drop-shadow(0px 0px 12px black);
+        }
+
+
+        #heading, a {
+            color: green;
+        }
+
+        #dv2 {
+            position: relative;
+            background-image: url('./images/globe@1x.jpg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        #dv3 {
+            position: relative;
+            background-image: url('./images/div.span-12.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #dv4 {
+            position: relative;
+        }
+        #dv5{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grey {
+            width: 200px;
+            width: 250px;
+            background-color: rgba(153, 149, 149, 0.5);
+        }
+
+        #enterprise{
+            display: flex;
+            padding: 0px;
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+
+        #e1 {
+            flex-grow: 1;
+            color: white;
+            font-size: 20px;
+        }
+        #e2{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        #whyChooseSkillSwap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 600px;
+        }
+
+        #why1{
+            width: 65%;
+            height: 100%;
+        }
+
+        #why2{
+            width: 30%;
+            height: 100%;
+        }
+        #flyGirl{
+            position: relative;
+            left: 43%;
+            top: -650px;
+        }
+
+        .top-skills{
+            margin: 10px;
+            margin-top: 0px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="mx-3" src="./images/skillswap7190-fvrxi.svg">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item mx-4">
+                            <div class="btn-group">
+                                <div type="button" class="dropdown-toggle my-2"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Find Talent
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item"
+                                            type="button">blah</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah2</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah3</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn mx-5" type="submit">Become
+                                Swapper</button>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search for any services"
+                        aria-label="Search"
+                        id="search">
+
+                </form>
+                <div class="d-flex">
+                    <button class="btn me-2" type="submit" id="login"><a href="createaccount" style="text-decoration: none; color: black;">log in</a></button>
+                    <button class="btn" type="submit" id="signup"><a href="createaccount" style="text-decoration: none; color: white;">sign up</a></button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li>
+                            <div class="mx-2" type="submit">Development & IT</div>
+                        </li>
+
+                        <li>
+                            <div class="mx-2" type="submit">Ai Services</div>
+                        </li>
+                        <li>
+                            <div class="mx-2" type="submit">Design & Creative</div>
+                        </li>
+                        <li>
+                            <div class="mx-2" type="submit">Sales & Marketing</div>
+                        </li>
+                        <li>
+                            <div class="mx-2" type="submit">Admin & Custom
+                                Support</div>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <div class="btn-group">
+                                <div type="button" class="dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    More
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item"
+                                            type="button">blah</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah2</button></li>
+                                    <li><button class="dropdown-item"
+                                            type="button">blah3</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container text-left my-4">
+            <div class="row">
+                <div class="container col-lg-8" id="dv1">
+                    <div class="container">
+                    <p class="display-2" id="heading"><b>Swapping Your Journey
+                            with others</b> </p>
+                    <p class="display-7">Forgert the old rules. You can have the
+                        best people. <br>
+                        Right now. Right here</p>
+                     <button class="container btn my-4" type="submit" id="getStarted">Get Started</button>
+                    </div>
+                    <div class="container my-5">
+                        <b class="mx-2">Trusted By</b> <br>
+                        <img class="mx-2" src="images/Microsoft.png" alt="MICROSOFT">
+                        <img class="mx-2" src="images/airbnb.png" alt="AIRBNB">
+                        <img class="mx-2" src="images/bissell.png" alt="Blssell">
+                    </div>
+                </div>
+
+                <div class="col display-2" id="dv2"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container text-left my-4">
+            <div class="row">
+                <div class="col display-2" id="dv3"></div>
+
+                <div class="container col-lg-8" id="dv4">
+                    <p class="display-4"><b>Swap Your Skills, it's free</b> </p>
+                    <div id="dv5">
+                        <div class="d-flex">
+                            <img src="images/Img.png" width="20px" height="20px" alt="🔥" class="my-2">
+                            <div class="mx-2">
+                                <h3>No Cost to join</h3>
+                                <p>register and browse professionals, explore
+                                    projects or even book a cunsultation.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <img src="images/Frame.png"  width="20px" height="20px" alt="😎" class="my-2">
+                            <div class="mx-2">
+                                <h3>Post a job and hire top talent</h3>
+                                <p>Finding talent doesn't have to be a chore. Post a job or we can search for you!</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <img src="images/Img (1).png"  width="20px" height="20px" alt="🤫" class="my-2">
+                            <div class="mx-2">
+                                <h3>Work with the best -- without breaking the bank</h3>
+                                <p>Skill Swap makes it affordable to up your work and take advantange of low transection rates.</p>
+                            </div>
+                        </div>
+                        <div class=>
+                            <button class="btn my-4" type="submit" id="signUpForFree"><a href="createaccount" style="text-decoration: none; color: white;">Sign up for free</a></button>
+                            <button class="btn btn-outline-success my-4 mx-3" type="submit" id="learnHowToSwap">learn how to swap</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Browse talent by category</h1>
+            <p class="display-7">Looking for Talent? <a href="#"> <u>Browse Talent</u> </a></p>
+        </div>
+
+        <div class="container">
+            <div class="row my-5 gap-2">
+                <div class="col btn grey">
+                    <h4>Development & IT</h4>
+                    <pre class="display-7" id="rating1"> 5 rating   12 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Ai Services</h4>
+                    <pre class="display-7" id="rating2"> 5 rating   10 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Design & Creative</h4>
+                    <pre class="display-7" id="rating3">4.9 rating   10 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Sales & Marketing</h4>
+                    <pre class="display-7" id="rating4">4.9 rating   11 skills</pre>
+                </div>
+            </div>
+
+            <div class="row gap-2">
+                <div class="col btn grey">
+                    <h4>Writing & Translation</h4>
+                    <pre class="display-7" id="rating5">4.9 rating   10 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Admin & Customer Support</h4>
+                    <pre class="display-7" id="rating6">4.8 rating   9 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Finanace & Accounting</h4>
+                    <pre class="display-7" id="rating7">4.8 rating   11 skills</pre>
+                </div>
+                <div class="col btn grey">
+                    <h4>Engineering & Architecture</h4>
+                    <pre class="display-7" id="rating8">4.6 rating   10 skills</pre>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" id="enterprise" style="background-color: #2c5d50; border-radius:10px">
+            <div class="flex" id="e1">
+                <div class="container mx-5 my-4"><h4>Enterprise Suite</h4> </div>
+                <div class="container mx-5"> <h1> This is how</></div>
+                <div class="container mx-5" style="color: rgb(154, 252, 154);"> <h1> Good Talent</></div>
+                <div class="container mx-5" style="color: rgb(154, 252, 154);"> <h1>Find Good Talent.</></div>
+                <div class="container mx-5">
+                    <div class="display-7">Access the top 1% of talent on skill swap and a full suite of hybrid workforce</div>
+                    <div class="display-7">management tools. This is how innovation works now.</div>
+                </div>
+                <div class="container mx-5 d-flex">
+                    <img src="images/Img.png" alt="🔥">
+                    <div class="mx-2">Access the skill you required from talent</div>
+                </div>
+
+                <div class="container mx-5 d-flex my-3">
+                    <img src="images/Frame.png" alt="😎">
+                    <div class="mx-2">Control your workflow: hire and share your talent</div>
+                </div>
+
+                <div class="container mx-5 d-flex my-3">
+                    <img src="images/Img (1).png" alt="🤫">
+                    <div class="mx-2">Partner with skill swap to end to end support </div>
+                </div>
+
+                <div class="container mx-5 d-flex my-3">
+                </div>
+
+                <button class="btn btn-outline-success mx-5" type="submit" id="learnMore">Learn More</button>
+            </div>
+            <img id="e2" src="./images/Picture ⏵ enterprise-2023.jpg.png">
+
+        </div>
+
+        <div class="container my-5" style="background-image: url(./images/div.bg-delivery-model.png); padding: 0; width: 100%; height: 700px; background-repeat: no-repeat;">
+            <div class="btn" style="background-color: rgba(255, 255, 255, 0); width: 380px; height: 150px; position:relative; left: 2.5%; top: 62.5%"
+            onclick= '(()=>console.log(`Im absolute`))()'></div>
+        </div>
+
+
+        <div class="container" style="margin-top: 100px;">
+        <div class="container d-flex" id="whyChooseSkillSwap" styp>
+            <div style="background-color: rgba(155, 147, 147, 0.2);" id="why1">
+                <div class="container my-4 mx-4">
+                    <div class="display-5"><b>Why Choose</b> </div>
+                    <div class="display-5"> <b>Skill Swap</b> </div>
+                </div>
+
+                <div class="container d-flex mx-4">
+                    <img src="" alt="🔥" class="my-1">
+                    <div class="mx-2">
+                        <h3>Proof of quality</h3>
+                        <div class="display-7">Check any pro work samples, client reviews, and identity verifivation.</div>
+                    </div>
+                </div>
+
+                <div class="container d-flex mx-4 my-5">
+                    <img src="" alt="🔥" class="my-1">
+                    <div class="mx-2">
+                        <h3>No Cost</h3>
+                        <div class="display-7" style="max-width: 500px;">You only have to swap your talent with others, and you can also get the
+                            skill without swapping  if they want to share. </div>
+                    </div>
+                </div>
+
+
+                <div class="container d-flex mx-4" style="margin-bottom: 50px;">
+                    <img src="" alt="🔥" class="my-1">
+                    <div class="mx-2">
+                        <h3>Safe and Secure</h3>
+                        <div class="display-7" style="max-width: 500px;">
+                            Focus on your work knowing we help protect your data and privacy. We're here 24/7 support if you need it.
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="container" style="background-color: rgba(54, 210, 54, 0.7);" id="why2">
+                <div class="container" style="margin-top: 200px;">
+                    <div><h2>We're</h2></div>
+                    <div><h2>the worlds best talent</h2></div>
+                    <div><h2>Grower</h2></div>
+                </div>
+                <div class="container my-3">
+                    <div class="container d-flex">
+                        <img src="" alt="🔥" class="my-1">
+                        <div class="container">
+                            <h4>Rating</h4>
+                            <p>clients rate professionals on Skill Swap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/reaching-person@2x.png.png" id="flyGirl">
+        </div>
+
+
+        <div class="container d-flex" style="margin-top: -30%;">
+            <div class="container">
+                <h1 style="color: rgb(90, 226, 90);">Top Skill</h1>
+                <h1 style="color: rgba(90, 226, 90, 0.3);">Trending Skills</h1>
+            </div>
+
+            <div class="container">
+                <p class="top-skills">Generative AI Specialists</p>
+                <p class="top-skills">Data Entry Specialists</p>
+                <p class="top-skills">Video Editors</p>
+                <p class="top-skills">Data Analyst</p>
+                <p class="top-skills">Sopify Developers</p>
+                <p class="top-skills">Ruby on Developers</p>
+                <p class="top-skills">Android Developers</p>
+                <p class="top-skills">Bookkeeper</p>
+                <p class="top-skills">Content Writer</p>
+                <p class="top-skills">Data Scientist</p>
+                <p class="top-skills">Front End Developers</p>
+                <p class="top-skills">Game Developers</p>
+                <p class="top-skills">Graphics Designer</p>
+                <p class="top-skills">IOS Developers</p>
+                <p class="top-skills">Java Developers</p>
+            </div>
+
+            <div class="container">
+                <p class="top-skills">JavaScript</p>
+                <p class="top-skills">Logo Designing</p>
+                <p class="top-skills">Mobile App Development</p>
+                <p class="top-skills">Php Development</p>
+                <p class="top-skills">Python Development</p>
+                <p class="top-skills">Resume Writing</p>
+                <p class="top-skills">Class 9 All Subjects</p>
+                <p class="top-skills">Class 10 All Subjects</p>
+                <p class="top-skills">Class 11 All Subjects</p>
+                <p class="top-skills">Class 12 All Subjects</p>
+                <p class="top-skills">Content Writer</p>
+                <p class="top-skills">UI Designer</p>
+                <p class="top-skills">UX Designer</p>
+                <p class="top-skills">Operating System</p>
+                <p class="top-skills">WordPress Developers</p>
+            </div>
+        </div>
+
+        </div>
+
+
+<footer class="container text-center text-white" style="margin-top: 40px; background-color: rgba(0, 0, 0, 0.9)">
+    <div class="container p-4">
+
+      <section class="my-10">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">For Clients</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">How to hire</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Talent marketpiece</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Talent Scout</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Any Hire</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact to hire</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Direct Contects</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">For Talents</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">How to find works</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Direct Contracts</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Resource</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Help & Support</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Success Stories</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Skill Swap reviews</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Resource</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Community</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">leadership</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Invester Relations</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Our impact</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Press</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Trust, Safety & Security</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Modern Slavery Statement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Skill Swap</a>
+    </div>
+  </footer>
+
+    </body>
+
+</html>
+
+

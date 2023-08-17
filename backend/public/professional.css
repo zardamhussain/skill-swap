@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.logo{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+}
+.div1{
+    color: #D9D9D9;
+    width:100%;
+    display: flex;
+    padding: 25px 20px;
+    align-items: center;
+}
+.personalName {
+    display: flex;
+    margin-right: 40px;
+}
+.personalName span{
+    font-size: 36px;
+    color: white;
+    font-family: 'Monoton', cursive;
+}
+.greaterthan{
+    margin-right: 40px;
+    font-family: 'Monoton', cursive;
+    color: #14A800;
+
+}
+.circle1{
+    height: 50px;
+    width: 50px;
+    background-color: #14A800;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.circle1.ka2{
+    background-color:#D9D9D9;
+}
+.personalName h2{
+    position: relative;
+    top: 10px;
+    font-weight: 300;
+}
+.personalName.active{
+    color: #14A800 ;
+}
+
+/* Persional info heading*/
+.personalinfoContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%;
+    justify-content: center;
+}
+.step{
+    color: #D9D9D9;
+    font-size: 20px;
+}
+.personalInfoHead{
+    color: black;
+    opacity: 0.59;
+    font-size: 36px;
+}
+.redstar{
+    color: red;
+    margin-right: 12px;
+    font-size: 32px;
+}
+
+/*full Name*/
+.fullnameContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%;
+}
+.fullnameHead{
+    display: flex;
+}
+.fullnameHead h2{
+    font-size: 32px;
+    font-weight: 300;
+}
+.Private{
+    font-size: 32px;
+    opacity: 0.59;
+    font-style: italic;
+}
+.fullnameContainer p{
+    font-size: 22px;
+    opacity: 0.59;
+    margin-bottom: 15px;
+}
+.inputs input{
+    width: 25%;
+    padding: 15px;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid;
+    margin-right: 80px;
+    font-size: 32px;
+}
+::placeholder{
+    font-size: 32px;
+    color: #D9D9D9;
+}
+
+/*Username*/
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.containerhead{
+    display: flex;
+}
+.containerhead h2{
+    font-size:32px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.skillContainer p{
+    opacity: 0.59;
+}
+.skillContainer .example{
+    margin-bottom: 10px;
+}
+.skillContainer input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid;
+    margin-right: 80px;
+    font-size: 32px;
+}
+.AccountContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.AccountContainer p{
+    opacity: 0.59;
+}
+.AccountContainer .example{
+    margin-bottom: 10px;
+}
+.AccountContainer input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid;
+    margin-right: 80px;
+    font-size: 32px;
+}
+.profilepicContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.profilehead{
+    font-size: 32px;
+    display: flex;
+    font-weight: 300;
+}
+.rightprofile{
+    display: flex;
+    flex-direction: row;
+    animation: ease-in-out;
+}
+#file{
+    display: none;
+}
+.rightprofile img{
+    position: relative;
+}
+.rightprofile img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+#uploadButton{   
+    left: -228px;
+    top: 105px;
+    font-size: 128px;
+    font-weight: bold;
+    opacity: 0.59;
+    position: relative;
+    display: none; 
+    
+}
+.profilepicContainer p{
+    margin-top: 20px;
+}
+.leftprofile{
+    margin-top: 50px;
+}
+/* Description Container*/
+.educationContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.educationHead,.educationHead h2{
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+    border-radius: 8px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+textarea::placeholder{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    /* left: 1px; */
+}
+.min-container{
+    opacity: 0.59;
+}
+
+/*language*/
+
+
+.uploadCertificationContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.certificationHead{
+    display: flex;
+    font-size:32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#Certification{
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 80%;
+}
+.languages{
+    border: 2px solid;
+
+    padding: 20px;
+}
+.languages option{
+    color: #484c48;
+}
+.addButton{
+    padding: 25px;
+    width: 10%;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid;
+    background-color: #14A800;
+    color: white;
+    font-size: 25px;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    width: 100%; 
+}
+.fixing{
+    padding: 15px;
+    margin-right: 40px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 10%;
+}
+.mobileNumber{
+    padding: 15px;
+    font-size: 32px;
+    border-radius: 10px;
+    width: 60%;
+}
+.mobileNumber::-webkit-inner-spin-button,
+.mobileNumber::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.button{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse ;
+}
+.continueButton{
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    width: 20%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    background-color: #8ddd82;
+    color: white;
+    font-size: 25px;
+}
+.continueButton a{
+    text-decoration: none;
+    color: white;
+}
+.footer2{
+    margin-top: 60px;
+    width: 100%;
+    padding: 30px;
+    left: calc(50% - 1425px/2 + 4px);
+    bottom: 16px;
+    text-transform: capitalize;
+    background: #001E00;
+    border-radius: 8px;
+}
+
+.footer2 a{
+text-decoration: none;
+color: white;
+display: flex;
+}
+
+.last_footer{
+display: flex;
+justify-content: space-around;
+align-content: center;
+}
+.languagevalue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: 1px solid;
+    border-radius:20px;
+    width: 10%;
+    padding: 10px;
+    background-color: #D9D9D9;
+    margin-right:40px;
+}
+.languageInput{
+    display: flex;
+    flex-direction: row;
+}
+.hidden{
+    display: none;
+}
+
+#Occupation{
+    padding: 15px;
+    margin-right: 400px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 60%;
+    opacity: 0.59;
+}
+#skills{
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    opacity: 0.59;
+}
+#Accounts{
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+    opacity: 0.59;
+}
+.skilloptionContainer{
+    border: 2px solid;
+    padding: 50px
+}
+.AccountoptionContainer{
+    border: 2px solid;
+    padding: 50px
+}
+#skillsLevel{
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    opacity: 0.59;
+}
+#AccountLevel{
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    opacity: 0.59;
+}
+.addButtonSkill{
+    padding: 25px;
+    width: 10%;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid;
+    background-color: #14A800;
+    color: white;
+    font-size: 25px;
+}
+.addButtonAccount{
+    padding: 25px;
+    width: 10%;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid;
+    background-color: #14A800;
+    color: white;
+    font-size: 25px;
+}
+.inputs{
+    border: 1px solid;
+    padding: 15px;
+}
+#educationLevel1,#educationLevel2,#educationLevel3,#educationLevel4{
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    opacity: 0.59; 
+}
+#educationLevel1,#educationLevel3{
+    width: 30%;
+    margin-bottom: 15px;
+    margin-left: 120px;
+}
+#educationLevel4{
+    width: 20%;
+}
+.addButtonEducation{
+   margin-left: 300px;
+    padding: 25px;
+    width: 10%;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid;
+    background-color: #14A800;
+    color: white;
+    font-size: 25px;
+    transform: translateY(-70px);
+}
+.skillvalue{
+    border: 1px solid;
+    background-color: #D9D9D9;
+    width: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.skilloverview{
+    display: flex;
+    flex-direction: row;
+}
+.hidden{
+    display: none;
+}
+.links{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    background-color: #D9D9D9;
+}
+.accountlinks{
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+    background-color: #D9D9D9;
+}

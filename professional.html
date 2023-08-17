@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Professional Info</title>
+    <link rel="stylesheet" href="professional.css">
+</head>
+<body>
+    
+    <img src="images/Skill_Swap.png" alt="" class="logo">
+    <hr>
+    <div class="div1">
+        <div class="personalName active">
+            <div class="circle1 ">
+                <span class="number1">✓</span>
+            </div>
+            <h2>Personal Info</h2>
+        </div>
+        <div class="greaterthan active">&gt;</div>
+        <div class="personalName active">
+            <div class="circle1 ">
+                <span class="number1">2</span>
+            </div>
+            <h2>Professional Info</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="personalinfoContainer">
+    <div class="step">
+        Step- <span>2 </span>of <span>2</span>
+    </div>
+    <h2 class="personalInfoHead">Professional Info</h2>
+</div>
+    <hr>
+    <form action="/card" >
+    <div class="fullnameContainer">
+        <div class="fullnameHead">
+            <h2 class="fullname">Your Occupation</h2><span class="redstar">*</span>
+        </div>
+        <p>Ex: Employed</p>
+        <div class="inputs">
+            <select name="Occupation" id="Occupation" >
+                <option value="Select-Occupation">Select-Occupation</option>
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Self">Self</option>
+            </select>
+        </div>
+    </div>
+    <div class="skillContainer">
+        <div class="containerhead">
+            <h2 class="skill">Skill</h2>
+            <span class="redstar">*</span>
+        </div>
+        <p>
+            List the skills related to the services you're offering and add your 
+            experience level.</p><br>
+        <div class="skilloptionContainer">
+  
+        <select name="skills" id="skills">
+            <option value="Guitar Player">Guitar Player</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Web Designing">Web Designing</option>
+            <option value="Graphic and Designing">Graphic and Designing</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Writing and Translation">Writing and Translation</option>
+            <option value="Video and Animation">Video and Animation</option>
+            <option value="Music and Audio">Music and Audio</option>
+            <option value="Programming and Tech">Programming and Tech</option>
+            <option value="Photography">Photography</option>
+            <option value="Buisnesses">Buisnesses</option>
+            <option value="Classes">Classes</option>
+            <option value="JEE">JEE</option>
+            <option value="NEET">NEET</option>
+            <option value="Gate">Gate</option>
+            <option value="Olympiad Exams">Olympiad Exams</option>
+            <option value="Entrance Exams">Entrance Exams</option>
+            <option value="Government Exam">Government Exam</option>
+            <option value="English Learning">English Learning</option>
+            <option value="CAT">CAT</option>
+            <option value="Others">Others</option>
+        </select>
+        <select name="skillsLevel" id="skillsLevel">
+            <option value="Basic">Basic</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select>
+        <button class="addButtonSkill">Add</button>
+        <div class="skilloverview">
+            <div class="skillvalue hidden">
+                Guitar Player
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="educationContainer">
+            <div class="educationHead">
+                <h2>Education</h2><span class="redstar">*</span>
+            </div>
+            <div class="inputs">
+                <select name="educationLevel" id="educationLevel1">
+                    <option value="College Student">College Student</option>
+                    <option value="Post Graduate">Post Graduate</option>
+                    <option value="Under Graduation">Under Graduation</option>
+                    <option value="School Student">School Student</option>
+                </select>
+                <select name="educationLevel" id="educationLevel2">
+                    <option value="Btech">Btech</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="Mtech">Mtech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Com">M.Com</option>
+                    <option value="Law">Law</option>
+                    <option value="Class12">Class12</option>
+                    <option value="Class11">Class11</option>
+                    <option value="1-Years">1-Years</option>
+                    <option value="2-Years">2-Years</option>
+                    <option value="3-Years">3-Years</option>
+                    <option value="4-Years">4-Years</option>
+                    <option value="5-Years-or-more">5-Years-or-more</option>
+                </select>
+                <input type="text" name="educationLevel" id="educationLevel3" placeholder="College/School Name" required>
+                <select name="educationLevel" id="educationLevel4">
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+
+            </div>
+           
+        </div>
+        <div class="uploadCertificationContainer">
+        <div action="./index.html" method="post">
+            <div class="certificationHead">
+            <h2 class="certificationHead">Upload Certification Link</h2><span class="redstar">*</span>
+        </div>
+            <div class="Certification">
+                <input type="text" id="Certification" placeholder="Upload Your Certification Link for the skills or Education you have" required>
+            <button class="addButton">Add</button>
+            <div class="certiOver">
+                <!-- <div class="links">bansaldhruv@gmail.com</div> -->
+            </div>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+        <div class="AccountContainer">
+            <div class="containerhead">
+                <h2 class="Account">Account</h2>
+                <span class="redstar">*</span>
+            </div><br>
+            <div class="AccountoptionContainer">
+      
+            <select name="Accounts" id="Accounts">
+                <option value="Github">Github</option>
+                <option value="Linkdn">Linkdn</option>
+                <option value="Other">Other</option>
+               
+            </select>
+            <input type="email" name="email" id="AccountsLevel"  placeholder="Account" required>
+            </select>
+            <button class="addButtonAccount">Add</button>
+            <div class="accountOver">
+                <!-- <div class="accountlinks">bansaldhruv@gmail.com</div> -->
+            </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit" class="continueButton" disabled="" >Continue</button>
+        </div>
+</form>
+    <div class="footer2">
+        <div class="last_footer">
+            <a href="">©2023-2023 skill_swap</a>
+            <a href="">term of serivce</a>
+            <a href="">privacy policy</a>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    const skillBtn = document.querySelector(".addButtonSkill")
+    skillBtn.addEventListener('click',(e)=>{
+        e.preventDefault();
+        let overviewContainer = document.querySelector(".skilloverview")
+        let skillinp = document.querySelector("#skills").value;
+        let skillvalue = document.querySelector(".skillvalue")
+        const html = `
+        <div class="skillvalue">
+                ${skillinp}
+            </div>
+        `;
+            skillvalue.insertAdjacentHTML('afterend',html)
+
+    })
+   const CertificationAddBtn = document.querySelector(".addButton");
+   CertificationAddBtn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let certification = document.querySelector("#Certification")
+    let certiOver = document.querySelector(".certiOver");
+    let links = document.querySelector(".links");
+    const html = `
+    <div class="links">${certification.value}</div>
+    `;
+    certiOver.insertAdjacentHTML('afterend',html)
+   })
+   const addButtonAccount = document.querySelector(".addButtonAccount");
+   addButtonAccount.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let AccountsLevel = document.querySelector("#AccountsLevel")
+    let accountOver = document.querySelector(".accountOver");
+    // let links = document.querySelector(".links");
+    const html = `
+    <div class="accountlinks">${AccountsLevel.value}</div>
+    `;
+    accountOver.insertAdjacentHTML('afterend',html)
+   })
+
+document.getElementById('Occupation').addEventListener('change',(e)=>{
+    document.querySelector('.continueButton').disabled = false;
+    document.querySelector('.continueButton').style.backgroundColor = '#14A800';
+
+})
+
+</script>
+</html>

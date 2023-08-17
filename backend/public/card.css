@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Itim&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    background-color: #f3f3f3;
+    min-height: 100vh;
+  }
+
+nav{
+    /* background:#33313127 ; */
+    width: 100%;
+    padding: 10px 10%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* overflow: hidden; */
+}
+.left-nav{
+    width: 50%;
+    position: relative;
+    left: -8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+.left-nav ul{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+.right-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 60%;
+}
+
+.right-nav form{
+    display: flex;
+    align-items: center;
+}
+
+.right-nav form button{
+    background: #5ec576;
+    border: none;
+    border-radius: 50%;
+    padding: 11px;
+    position: absolute;
+    right: 45%;
+}
+
+.right-nav input{
+    text-align: center;
+    outline: none;
+   position: absolute;
+   width: 15rem;
+   left: 50%;
+   padding: 10px;
+   border-radius: 15px;
+   border: 0;
+}
+.right-nav .profile-image-container{
+    position: absolute;
+    right:0;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 60px;
+    overflow: hidden;
+}
+.profile-image-container img{
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50% -50%)
+}
+.sub-menu-wrap{
+    z-index: 5;
+    position: absolute;
+    background: #5ec576;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+    color: white;
+}
+
+.sub-menu{
+    /* background-color: ; */
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.user-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.user-info h2{
+    font-weight: 500 ;
+}
+.user-info img{
+    outline: none;
+    height: 100px;
+    border-radius: 50% ;
+    border: 1px solid;
+}
+hr{
+    margin: 15px 0;
+    height: 1px;
+    border: 0;
+    background: black;
+}
+.sub-menu .sub-menu-link{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    color: white;
+
+    width: 100%;
+    transition: font-weight 0.2s;
+}
+.sub-menu-link i{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right:15px ;
+}
+.sub-menu-link span{
+    color: white;
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+.searching{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+.searching input{
+    padding: 11px;
+    margin: 0 40px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 18px;
+    overflow: hidden;
+}
+.searching input::placeholder{
+    font-size: 16px;
+}
+
+.searching button  {
+    padding: 1.2rem 1.8rem;
+    border: none;
+    outline: none;
+    background-color: #5ec576;
+    border-radius: 5rem;
+}
+
+.card-container{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly ;
+    width: 100%;
+    flex-wrap: wrap;
+    /* background: #5ec576; */
+}
+
+.card{
+    /* margin-top: 12px; */
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    /* background: #fff; */
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.front{
+    /* background: url(Frame\ 7.png); */
+    /* background-size: cover;
+    background-position: center; */
+    padding: 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: rgba(94,197,118, 0.2);
+}
+.front img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: -1;
+    object-fit: cover;
+}
+.front h2{
+    font-weight: 400;
+}
+
+.front p{
+    font-size: 12px;
+}
+
+.front button{
+    width: 120px;
+    border: 1px solid #fff;
+    background: #5ec576;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #fff;
+    /* margin-left: 20px; */
+}
+.back{
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+.back h1{
+    line-height: 2.4rem;
+    margin-bottom: 4px;
+    font-size: 26px;
+}
+.back h1 span{
+    font-weight: 400;
+    font-size: 25px;
+}
+.back p{
+    font-size: 12px;
+}
+.back img{
+    width: 40px;
+}
+
+.row{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 20px;
+    flex-direction: column; 
+}
+.back button{
+    background: #5ec576;
+    color: #fff;
+    border: 0;
+    outline: none!important;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-left: 50px;
+    box-shadow: 0 8px 10px rgba(120,0,173,0.3);
+}
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+/* Responsive */
+
+@media only screen and (max-width:1207px){
+    .left-nav {
+        width: 80%;
+    }
+    .right-nav{
+        width: 20%;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width:489px){
+
+}

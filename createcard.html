@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 400px;
+        right: 20px;
+      }
+
+      .form-container h2 {
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        outline: none;
+        background-color: #0756aa;
+      }
+    </style>
+    <title>Skill Exchange Form</title>
+  </head>
+  <body>
+    <img src="https://shorturl.at/BHNX9" alt="image" />
+    <div class="form-container">
+      <h2>Skill Swap Card Creater</h2>
+      <form>
+        <div class="form-group">
+          <label for="skillToTeach">Skill to Teach</label>
+          <input
+            type="text"
+            id="skillToTeach"
+            name="skillToTeach"
+            required
+            placeholder="write here"
+          />
+        </div>
+        <div class="form-group">
+          <label for="skillToLearn">Skill to Learn</label>
+          <input
+            type="text"
+            id="skillToLearn"
+            name="skillToLearn"
+            required
+            placeholder="write here"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description of Skill</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="achievement">Achievement in Skill</label>
+          <textarea
+            id="achievement"
+            name="achievement"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Create Skill Card</button>
+      </form>
+      <footer></footer>
+    </div>
+  </body>
+</html>

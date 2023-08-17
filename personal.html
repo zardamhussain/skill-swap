@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@300;400&family=Monoton&family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+<body>
+    
+    <img src="images/Skill_Swap.png" alt="" class="logo">
+    <hr>
+    <div class="div1">
+        <div class="personalName active">
+            <div class="circle1">
+                <span class="number1">1</span>
+            </div>
+            <h2>Personal Info</h2>
+        </div>
+        <div class="greaterthan">&gt;</div>
+        <div class="personalName">
+            <div class="circle1 ka2">
+                <span class="number1">2</span>
+            </div>
+            <h2>Professional Info</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="personalinfoContainer">
+    <div class="step">
+        Step- <span>1 </span>of <span>2</span>
+    </div>
+    <h2 class="personalInfoHead">Personal Info</h2>
+</div>
+    <hr>
+    <form action="./professional">
+    <div class="fullnameContainer">
+        <div class="fullnameHead">
+            <h2 class="fullname">Full Name</h2><span class="redstar">*</span><span class="Private">Private</span>
+        </div>
+        <p>Ex: Dhruv Bansal</p>
+        <div class="inputs">
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <input type="text" id="lastname" placeholder="Last Name" required>
+        </div>
+    </div>
+    <div class="usernameContainer">
+        <div class="containerhead">
+            <h2 class="username">UserName</h2>
+            <span class="redstar">*</span>
+        </div>
+        <p>To help build credible and authentic connections with customers, they’ll now see your display name.</p><br>
+        <p>We suggest using your first name and first initial of your last name.</p><br>
+        <p class="example">Ex: DhruvB</p>
+        <input type="text" id="username" placeholder="UserName">
+    </div>
+    <div class="profilepicContainer">
+        <div class="leftprofile">
+            <div class="profilehead">
+                <h2 class="profilehead">Profile Picture</h2><span class="redstar">*</span>
+            </div>
+            <p>Add a profile picture of yourself so customers will knowexactly who they’ll be working with.</p>
+        </div>
+        <div class="rightprofile">
+            <img src="./images/Frame 7.png" class="profileImage" alt="">
+            <input type="file" name="file" id="file">
+            <label for="file" id="uploadButton">D</label>
+        </div>
+        </div>
+        <div class="descriptionContainer">
+            <div class="descriptionHead">
+                <h2>Description</h2><span class="redstar">*</span>
+            </div>
+            
+            <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Share a bit about your work experience, cool projects you’ve completed, and your area of expertise.
+            "></textarea>
+            <div class="min-container">Min: 150 Characters</div>
+        </div>
+        <div class="languageContainer">
+        <div action="./index.html" method="post">
+            <div class="languageHead">
+            <h2 class="languageHead">Languages</h2><span class="redstar">*</span>
+        </div>
+            <div class="languages">
+                <select name="Language" id="Language">
+                <option for="Language" value="Select">Select an option</option>
+                <option for="Language" value="Hindi">Hindi</option>
+                <option for="Language" value="English">English</option>
+                <option for="Language" value="Japanese">Japanese</option>
+                <option for="Language" value="German">German</option>
+                <option for="Language" value="Telugu">Telugu</option>
+                <option for="Language" value="Malyalam">Malyalam</option>
+                <option for="Language" value="French">French</option>
+                <option for="Language" value="Punjabi">Punjabi</option>
+                <option for="Language" value="Arabic">Arabic</option>
+            </select>
+            <button class="addButton">Add</button>
+            <div class="languageInput ">
+                <div class="languagevalue hidden"></div>
+            </div>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+        <div class="contactContainer">
+            <div class="languageHead">
+                <h2 class="languageHead">Contact Number</h2><span class="redstar">*</span>
+            </div>
+            <div class="phnInputs">
+                <input type="number" name="initialphn" placeholder="+91" readonly class="fixing">
+                <input type="number" name="afterphn" placeholder="Mobile Number" required class="mobileNumber">
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <button type="submit" class="continueButton" disabled >Continue</button>
+    </div>
+</form>
+    <div class="footer2">
+        <div class="last_footer">
+            <a href="">©2023-2023 skill_swap</a>
+            <a href="">term of serivce</a>
+            <a href="">privacy policy</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    const firstname = document.querySelector("#firstname");
+    const lastname = document.querySelector("#lastname");
+    const username = document.querySelector("#username");
+    const description = document.querySelector("#textarea");
+
+    const imageContainer = document.querySelector(".rightprofile");
+    const image = document.querySelector(".profileImage");
+    let file = document.querySelector("#file");
+    const uploadButton = document.querySelector("#uploadButton");
+
+    imageContainer.addEventListener("mouseenter",function(){
+        uploadButton.style.display = 'block';
+    })
+    imageContainer.addEventListener("mouseleave",function(){
+        uploadButton.style.display = 'none';
+    })
+    
+    file.addEventListener('change',function(){
+        const choosedFiles = this.files[0];
+        if(choosedFiles){
+            const reader = new FileReader();
+            reader.addEventListener('load',function(){
+                image.setAttribute('src',reader.result)
+            })
+            reader.readAsDataURL(choosedFiles)
+        }
+
+    })
+    const phone = document.querySelector('.mobileNumber');
+    phone.addEventListener('change',function(e){
+        e.preventDefault();
+        const phoneNumber = phone.value;
+        const phoneRegex = /^[789][0-9]{9}$/
+        if(!phoneRegex.test(phoneNumber)){
+            alert('Invalid Phone Number');
+            phone.value = '';
+        }
+    })
+    const addButtonContainer = document.querySelector(".languagevalue");
+    const language = document.querySelector("#Language");
+    const addButton = document.querySelector(".addButton")
+
+    // language.addEventListener('change',function(){
+    //     addButton.disabled = "false";
+    // })
+    addButton.addEventListener('click',function(){
+            const html = `
+            <div class="languagevalue">
+                    ${language.value}
+                </div>
+                `;
+                console.log(addButtonContainer)
+
+                    addButtonContainer.insertAdjacentHTML('afterend',html);
+
+        })
+    const continueContainer = document.querySelector(".button");
+    const continuebtn = document.querySelector(".continueButton");
+    
+    continueContainer.addEventListener('click',function(e){
+        if(firstname.value && lastname.value && username.value && description.value && file.value && phone.value){
+            continuebtn.disabled = false;
+            firstname.value = ""
+            lastname.value = "" 
+            username.value = "" 
+            description.value = "" 
+            file.value=''
+            phone.value=''
+            addButtonContainer.innerHTML = "";
+            language.value = "Select";
+        }
+        alert("Please fill all the fields")
+          
+        
+    })
+</script>
+</html>
